@@ -1,3 +1,61 @@
 body {
-  background: blanchedalmond;
+  background: peachpuff;
 }
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr  ;
+  grid-template-areas: 
+    " a a a a"
+    "b b b c"
+    "b b b c"
+     
+  ; 
+}
+.a {
+  grid-area: a;
+  background-color: green;
+}
+.b {
+  grid-area: b;
+ background-color: greenyellow;
+}
+.c { 
+  grid-area: c;
+  background-color: lightgreen;
+
+}
+
+
+
+
+@media(max-width: 1000px) {
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 2fr ;
+  grid-template-areas: 
+    " a a a "
+    "b c d "
+    "e f g "
+    "h h h "
+  ; 
+}
+.a {
+  grid-area: a;
+  background-color: green;
+}
+.b {
+  grid-area: b;
+ background-color: greenyellow;
+}
+.c { 
+  grid-area: c;
+  background-color: lightgreen;
+}
+
+}
+
